@@ -20,7 +20,7 @@ def drink_water_reminder():
     notify("Drink water now")
 
 schedular = BackgroundScheduler()
-schedular.add_job(drink_water_reminder, 'interval', minutes=60)
+schedular.add_job(drink_water_reminder, 'interval', minutes=0.1)
 schedular.start()
 
 while True:

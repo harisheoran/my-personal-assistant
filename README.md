@@ -4,7 +4,7 @@
 
 ### How to install?
 ```
-wget https://github.com/harisheoran/my-personal-assistant/blob/main/install.sh
+wget https://raw.githubusercontent.com/harisheoran/my-personal-assistant/main/install.sh 
 chmod +x install.sh
 ./install.sh
 ```
