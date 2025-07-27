@@ -1,0 +1,16 @@
+altgraph==0.17.4
+APScheduler==3.11.0
+certifi==2025.7.14
+charset-normalizer==3.4.2
+click==8.1.8
+dbus-python==1.4.0
+gTTS==2.5.4
+idna==3.10
+packaging==25.0
+plyer==2.1.0
+pyinstaller-hooks-contrib==2025.7
+requests==2.32.4
+setuptools==78.1.1
+tzlocal==5.3.1
+urllib3==2.5.0
+wheel==0.45.1
