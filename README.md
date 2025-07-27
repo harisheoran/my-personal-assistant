@@ -1,5 +1,16 @@
 - Architecture Diagram: https://app.eraser.io/workspace/lgl5EIFGcINbraTMzx7Q
 
+# Setup
 
-Runtime Requirements
-- RuntimeError: This means you probably do not have eSpeak or eSpeak-ng installed!
+### How to install?
+```
+wget https://github.com/harisheoran/my-personal-assistant/blob/main/install.sh
+chmod +x install.sh
+./install.sh
+```
+
+### How to stop the service?
+```
+systemctl --user stop my-personal-assistant.service
+```
+
