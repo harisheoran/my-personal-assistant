@@ -1,6 +1,5 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 import time
-from plyer import notification
 from gtts import gTTS
 import os
 import platform
