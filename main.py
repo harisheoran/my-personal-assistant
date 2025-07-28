@@ -3,14 +3,26 @@ import time
 from plyer import notification
 from gtts import gTTS
 import os
+import platform
 
-def notify(message):
-    notification.notify(
-        title="my personal assistant",
-        message= message,
-        app_name="Personal Assistant",
-        timeout=10 
-    )
+if platform.system() == "Darwin":
+    import os
+    def notify(message):
+        title = "my-personal-assistant"
+        os.system(f'''osascript -e 'display notification "{message}" with title "{title}"' ''')
+        notify_audio(message=message)
+else:
+    from plyer import notification
+    def notify(message):
+        notification.notify(
+            title="my personal assistant",
+            message= message,
+            app_name="Personal Assistant",
+            timeout=10 
+        )
+        notify_audio(message=message)
+
+def notify_audio(message):
     tts = gTTS(message, lang="en", tld="co.uk")
     tts.save("voice.mp3")
     os.system("mpg123 voice.mp3")
